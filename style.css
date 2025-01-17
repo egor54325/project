@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Play-Regular";
+    src: url(fonts/Play/Play-Regular.ttf);
+}
+
+body {
+    font-family: "Play-Regular";
+    background-color: #ffffff;
+    color: black;
+}
+
+a {
+    color: black;
+    text-decoration: None;
+}
+
+header {
+    width: 10px;
+    display: flex;
+}
+
+.header-cotigory {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px auto
+}
+
+.container-in {
+    width: 200px;
+}
