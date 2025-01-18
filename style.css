@@ -3,28 +3,41 @@
     src: url(fonts/Play/Play-Regular.ttf);
 }
 
-body {
-    font-family: "Play-Regular";
-    background-color: #ffffff;
+.container {
+    width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.center {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+}
+
+.logo {
+    font-family: "Play-Regular", sans-serif;
+    font-size: 24px;
+    text-decoration: none;
     color: black;
+}
+
+.menu {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-family: "Play-Regular", sans-serif;
 }
 
 a {
-    color: black;
-    text-decoration: None;
-}
-
-header {
-    width: 10px;
-    display: flex;
-}
-
-.header-cotigory {
-    display: flex;
-    justify-content: flex-end;
-    padding: 0px auto
-}
-
-.container-in {
-    width: 200px;
+    text-decoration: none;
 }
