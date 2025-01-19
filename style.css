@@ -3,6 +3,16 @@
     src: url(fonts/Play/Play-Regular.ttf);
 }
 
+.info {
+    font-size: 25px;
+    font-family: "Plat-Regular";
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+}
+
 .container {
     width: 1024px;
     display: flex;

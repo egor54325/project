@@ -1,66 +1,86 @@
-/* button from https://uiverse.io/cssbuttons-io/calm-tiger-42*/
+/* button from https://uiverse.io/mobinkakei/cold-bat-89 */
 @font-face {
     font-family: "Play-Bold";
     src: url("fonts/Play/Play-Bold.ttf");
 }
 
 .c-button {
-    display: inline-block;
-    padding: 12px 24px;
-    border: 1px solid #4f4f4f;
-    border-radius: 4px;
-    transition: all 0.2s ease-in;
-    position: relative;
-    overflow: hidden;
-    font-size: 19px;
+    display: flex;
+    padding: 11px 33px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    background: #6225e6;
+    transition: 1s;
+    box-shadow: 6px 6px 0 black;
+    transform: skewX(-15deg);
+    border: none;
     cursor: pointer;
-    color: black;
-    z-index: 1;
+    font-family: "Play-Bold";
 }
 
-.c-button:before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%) scaleY(1) scaleX(1.25);
-    top: 100%;
-    width: 140%;
-    height: 180%;
-    background-color: rgba(0, 0, 0, 0.05);
-    border-radius: 50%;
-    display: block;
-    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
-    z-index: -1;
-}
-
-.c-button:after {
-    content: "";
-    position: absolute;
-    left: 55%;
-    transform: translateX(-50%) scaleY(1) scaleX(1.45);
-    top: 180%;
-    width: 160%;
-    height: 190%;
-    background-color: #39bda7;
-    border-radius: 50%;
-    display: block;
-    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
-    z-index: -1;
+.c-button:focus {
+    outline: none;
 }
 
 .c-button:hover {
-    color: #ffffff;
-    border: 1px solid #39bda7;
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 #fbc638;
 }
 
-.c-button:hover:before {
-    top: -35%;
-    background-color: #39bda7;
-    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+.c-button .second {
+    transition: 0.5s;
+    margin-right: 0px;
 }
 
-.c-button:hover:after {
-    top: -45%;
-    background-color: #39bda7;
-    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+.c-button:hover .second {
+    transition: 0.5s;
+    margin-right: 45px;
+}
+
+.span {
+    transform: skewX(15deg);
+}
+
+.second {
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 12%;
+}
+
+.one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+}
+
+.two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+}
+
+.c-button:hover .three {
+    animation: color_anim 1s infinite 0.2s;
+}
+
+.c-button:hover .one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+}
+
+.c-button:hover .two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+}
+
+@keyframes color_anim {
+    0% {
+    fill: white;
+    }
+    50% {
+    fill: #fbc638;
+    }
+    100% {
+    fill: white;
+    }
 }
